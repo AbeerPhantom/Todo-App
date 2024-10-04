@@ -1,0 +1,121 @@
+
+body {
+    font-family: 'Roboto', sans-serif;
+    background: linear-gradient(135deg, #74ebd5, #ACB6E5);
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    background-color: white;
+    border-radius: 15px;
+    padding: 30px;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+    text-align: center;
+    width: 400px;
+    margin: 20px; 
+}
+
+input[type="text"] {
+    width: 80%;
+    padding: 15px;
+    border: 2px solid #74ebd5;
+    border-radius: 8px;
+    font-size: 18px;
+    color: #333;
+    margin-bottom: 15px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+input[type="text"]:focus {
+    outline: none;
+    border-color: #ACB6E5;
+    box-shadow: 0 0 8px #ACB6E5;
+}
+
+.todo-list {
+    list-style: none;
+    padding: 0;
+    margin: 20px 0;
+}
+
+.todo-list li {
+    background-color: #f9f9f9;
+    padding: 12px 20px;
+    margin-bottom: 12px;
+    border-radius: 8px;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 18px;
+    color: #333;
+}
+
+.btn {
+    padding: 12px 20px;
+    margin: 5px;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s ease;
+}
+
+.add-btn {
+    background-color: #28a745;
+    color: white;
+}
+
+.add-btn:hover {
+    background-color: #218838;
+}
+
+.delete-all-btn {
+    background-color: #dc3545;
+    color: white;
+}
+
+.delete-all-btn:hover {
+    background-color: #c82333;
+}
+
+li button {
+    background-color: #ffc107;
+    color: black;
+    border: none;
+    padding: 8px 14px;
+    border-radius: 6px;
+    font-size: 14px;
+    margin-left: 10px;
+    transition: background-color 0.3s ease;
+}
+
+li button:hover {
+    background-color: #e0a800;
+}
+
+li button:last-child {
+    background-color: #dc3545;
+    color: white;
+}
+
+li button:last-child:hover {
+    background-color: #c82333;
+}
+
+
+input[type="text"]::placeholder {
+    color: #999;
+}
+
+
+@media (max-width: 600px) {
+    .container {
+        width: 90%;
+    }
+
+    input[type="text"] {
+        width: 100%;
+    }
+}
